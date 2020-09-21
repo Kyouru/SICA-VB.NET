@@ -1,0 +1,14 @@
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\bin\Debug\SICA.exe.config
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\bin\Debug\SICA.exe
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\bin\Debug\SICA.pdb
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\bin\Debug\SICA.xml
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\bin\Debug\FontAwesome.Sharp.dll
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.vbprojAssemblyReference.cache
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.MainForm.resources
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.Resources.resources
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.vbproj.GenerateResource.cache
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.vbproj.CoreCompileInputs.cache
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.vbproj.CopyComplete
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.exe
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.xml
+C:\Zona de Trabajo\VisualBasic\SICA\SICA\obj\Debug\SICA.pdb
