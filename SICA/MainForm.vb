@@ -77,11 +77,15 @@ Public Class MainForm
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-    Private Sub btCustodia_Click(sender As Object, e As EventArgs) Handles btConsulta.Click
-        'OpenChildForm(New FormDashboard)
+    Private Sub btConsulta_Click(sender As Object, e As EventArgs) Handles btConsulta.Click
+        OpenChildForm(New FormConsulta)
     End Sub
 
     Private Sub pbLogo_Click(sender As Object, e As EventArgs) Handles pbLogo.Click
 
+    End Sub
+
+    Private Sub btImportar_Click(sender As Object, e As EventArgs) Handles btImportar.Click
+        OpenChildForm(New FormImportar)
     End Sub
 End Class

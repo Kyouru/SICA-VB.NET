@@ -23,6 +23,7 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LeftPanel = New System.Windows.Forms.Panel()
+        Me.btDesembolsos = New FontAwesome.Sharp.IconButton()
         Me.btDigitalizacion = New FontAwesome.Sharp.IconButton()
         Me.btEntregar = New FontAwesome.Sharp.IconButton()
         Me.btRecibir = New FontAwesome.Sharp.IconButton()
@@ -34,7 +35,7 @@ Partial Class MainForm
         Me.btMaximizar = New FontAwesome.Sharp.IconButton()
         Me.btCerrar = New FontAwesome.Sharp.IconButton()
         Me.MainPanel = New System.Windows.Forms.Panel()
-        Me.btDesembolsos = New FontAwesome.Sharp.IconButton()
+        Me.btImportar = New FontAwesome.Sharp.IconButton()
         Me.LeftPanel.SuspendLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TopPanel.SuspendLayout()
@@ -43,6 +44,7 @@ Partial Class MainForm
         'LeftPanel
         '
         Me.LeftPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LeftPanel.Controls.Add(Me.btImportar)
         Me.LeftPanel.Controls.Add(Me.btDesembolsos)
         Me.LeftPanel.Controls.Add(Me.btDigitalizacion)
         Me.LeftPanel.Controls.Add(Me.btEntregar)
@@ -51,9 +53,30 @@ Partial Class MainForm
         Me.LeftPanel.Controls.Add(Me.pbLogo)
         Me.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.LeftPanel.Location = New System.Drawing.Point(0, 0)
+        Me.LeftPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LeftPanel.Name = "LeftPanel"
-        Me.LeftPanel.Size = New System.Drawing.Size(200, 690)
+        Me.LeftPanel.Size = New System.Drawing.Size(150, 561)
         Me.LeftPanel.TabIndex = 0
+        '
+        'btDesembolsos
+        '
+        Me.btDesembolsos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btDesembolsos.FlatAppearance.BorderSize = 0
+        Me.btDesembolsos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btDesembolsos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btDesembolsos.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btDesembolsos.ForeColor = System.Drawing.Color.LightGray
+        Me.btDesembolsos.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btDesembolsos.IconColor = System.Drawing.Color.Black
+        Me.btDesembolsos.IconSize = 16
+        Me.btDesembolsos.Location = New System.Drawing.Point(0, 301)
+        Me.btDesembolsos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btDesembolsos.Name = "btDesembolsos"
+        Me.btDesembolsos.Rotation = 0R
+        Me.btDesembolsos.Size = New System.Drawing.Size(150, 49)
+        Me.btDesembolsos.TabIndex = 6
+        Me.btDesembolsos.Text = "Desembolsos"
+        Me.btDesembolsos.UseVisualStyleBackColor = True
         '
         'btDigitalizacion
         '
@@ -66,10 +89,11 @@ Partial Class MainForm
         Me.btDigitalizacion.IconChar = FontAwesome.Sharp.IconChar.None
         Me.btDigitalizacion.IconColor = System.Drawing.Color.Black
         Me.btDigitalizacion.IconSize = 16
-        Me.btDigitalizacion.Location = New System.Drawing.Point(0, 309)
+        Me.btDigitalizacion.Location = New System.Drawing.Point(0, 252)
+        Me.btDigitalizacion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btDigitalizacion.Name = "btDigitalizacion"
         Me.btDigitalizacion.Rotation = 0R
-        Me.btDigitalizacion.Size = New System.Drawing.Size(200, 60)
+        Me.btDigitalizacion.Size = New System.Drawing.Size(150, 49)
         Me.btDigitalizacion.TabIndex = 5
         Me.btDigitalizacion.Text = "Digitalizacion"
         Me.btDigitalizacion.UseVisualStyleBackColor = True
@@ -85,10 +109,11 @@ Partial Class MainForm
         Me.btEntregar.IconChar = FontAwesome.Sharp.IconChar.None
         Me.btEntregar.IconColor = System.Drawing.Color.Black
         Me.btEntregar.IconSize = 16
-        Me.btEntregar.Location = New System.Drawing.Point(0, 249)
+        Me.btEntregar.Location = New System.Drawing.Point(0, 203)
+        Me.btEntregar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btEntregar.Name = "btEntregar"
         Me.btEntregar.Rotation = 0R
-        Me.btEntregar.Size = New System.Drawing.Size(200, 60)
+        Me.btEntregar.Size = New System.Drawing.Size(150, 49)
         Me.btEntregar.TabIndex = 3
         Me.btEntregar.Text = "Entregar"
         Me.btEntregar.UseVisualStyleBackColor = True
@@ -104,10 +129,11 @@ Partial Class MainForm
         Me.btRecibir.IconChar = FontAwesome.Sharp.IconChar.None
         Me.btRecibir.IconColor = System.Drawing.Color.Black
         Me.btRecibir.IconSize = 16
-        Me.btRecibir.Location = New System.Drawing.Point(0, 189)
+        Me.btRecibir.Location = New System.Drawing.Point(0, 154)
+        Me.btRecibir.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btRecibir.Name = "btRecibir"
         Me.btRecibir.Rotation = 0R
-        Me.btRecibir.Size = New System.Drawing.Size(200, 60)
+        Me.btRecibir.Size = New System.Drawing.Size(150, 49)
         Me.btRecibir.TabIndex = 2
         Me.btRecibir.Text = "Recibir"
         Me.btRecibir.UseVisualStyleBackColor = True
@@ -123,10 +149,11 @@ Partial Class MainForm
         Me.btConsulta.IconChar = FontAwesome.Sharp.IconChar.None
         Me.btConsulta.IconColor = System.Drawing.Color.Black
         Me.btConsulta.IconSize = 16
-        Me.btConsulta.Location = New System.Drawing.Point(0, 129)
+        Me.btConsulta.Location = New System.Drawing.Point(0, 105)
+        Me.btConsulta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btConsulta.Name = "btConsulta"
         Me.btConsulta.Rotation = 0R
-        Me.btConsulta.Size = New System.Drawing.Size(200, 60)
+        Me.btConsulta.Size = New System.Drawing.Size(150, 49)
         Me.btConsulta.TabIndex = 1
         Me.btConsulta.Text = "Consulta"
         Me.btConsulta.UseVisualStyleBackColor = True
@@ -138,10 +165,11 @@ Partial Class MainForm
         Me.pbLogo.ForeColor = System.Drawing.SystemColors.ControlText
         Me.pbLogo.IconChar = FontAwesome.Sharp.IconChar.None
         Me.pbLogo.IconColor = System.Drawing.SystemColors.ControlText
-        Me.pbLogo.IconSize = 129
+        Me.pbLogo.IconSize = 105
         Me.pbLogo.Location = New System.Drawing.Point(0, 0)
+        Me.pbLogo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pbLogo.Name = "pbLogo"
-        Me.pbLogo.Size = New System.Drawing.Size(200, 129)
+        Me.pbLogo.Size = New System.Drawing.Size(150, 105)
         Me.pbLogo.TabIndex = 0
         Me.pbLogo.TabStop = False
         '
@@ -153,9 +181,10 @@ Partial Class MainForm
         Me.TopPanel.Controls.Add(Me.btMaximizar)
         Me.TopPanel.Controls.Add(Me.btCerrar)
         Me.TopPanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TopPanel.Location = New System.Drawing.Point(200, 0)
+        Me.TopPanel.Location = New System.Drawing.Point(150, 0)
+        Me.TopPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TopPanel.Name = "TopPanel"
-        Me.TopPanel.Size = New System.Drawing.Size(975, 52)
+        Me.TopPanel.Size = New System.Drawing.Size(731, 42)
         Me.TopPanel.TabIndex = 1
         '
         'lbTitulo
@@ -163,9 +192,10 @@ Partial Class MainForm
         Me.lbTitulo.AutoSize = True
         Me.lbTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbTitulo.ForeColor = System.Drawing.Color.White
-        Me.lbTitulo.Location = New System.Drawing.Point(21, 15)
+        Me.lbTitulo.Location = New System.Drawing.Point(16, 12)
+        Me.lbTitulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbTitulo.Name = "lbTitulo"
-        Me.lbTitulo.Size = New System.Drawing.Size(63, 26)
+        Me.lbTitulo.Size = New System.Drawing.Size(51, 22)
         Me.lbTitulo.TabIndex = 4
         Me.lbTitulo.Text = "Inicio"
         '
@@ -179,11 +209,11 @@ Partial Class MainForm
         Me.btMinimizar.IconColor = System.Drawing.Color.White
         Me.btMinimizar.IconSize = 24
         Me.btMinimizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btMinimizar.Location = New System.Drawing.Point(846, 8)
-        Me.btMinimizar.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
+        Me.btMinimizar.Location = New System.Drawing.Point(634, 6)
+        Me.btMinimizar.Margin = New System.Windows.Forms.Padding(0, 2, 2, 2)
         Me.btMinimizar.Name = "btMinimizar"
         Me.btMinimizar.Rotation = 0R
-        Me.btMinimizar.Size = New System.Drawing.Size(39, 24)
+        Me.btMinimizar.Size = New System.Drawing.Size(29, 20)
         Me.btMinimizar.TabIndex = 3
         Me.btMinimizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btMinimizar.UseVisualStyleBackColor = True
@@ -198,11 +228,11 @@ Partial Class MainForm
         Me.btMaximizar.IconColor = System.Drawing.Color.White
         Me.btMaximizar.IconSize = 24
         Me.btMaximizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btMaximizar.Location = New System.Drawing.Point(888, 8)
-        Me.btMaximizar.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
+        Me.btMaximizar.Location = New System.Drawing.Point(666, 6)
+        Me.btMaximizar.Margin = New System.Windows.Forms.Padding(0, 2, 2, 2)
         Me.btMaximizar.Name = "btMaximizar"
         Me.btMaximizar.Rotation = 0R
-        Me.btMaximizar.Size = New System.Drawing.Size(39, 24)
+        Me.btMaximizar.Size = New System.Drawing.Size(29, 20)
         Me.btMaximizar.TabIndex = 2
         Me.btMaximizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btMaximizar.UseVisualStyleBackColor = True
@@ -217,11 +247,11 @@ Partial Class MainForm
         Me.btCerrar.IconColor = System.Drawing.Color.White
         Me.btCerrar.IconSize = 24
         Me.btCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btCerrar.Location = New System.Drawing.Point(930, 8)
-        Me.btCerrar.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
+        Me.btCerrar.Location = New System.Drawing.Point(698, 6)
+        Me.btCerrar.Margin = New System.Windows.Forms.Padding(0, 2, 2, 2)
         Me.btCerrar.Name = "btCerrar"
         Me.btCerrar.Rotation = 0R
-        Me.btCerrar.Size = New System.Drawing.Size(39, 24)
+        Me.btCerrar.Size = New System.Drawing.Size(29, 20)
         Me.btCerrar.TabIndex = 1
         Me.btCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btCerrar.UseVisualStyleBackColor = True
@@ -230,40 +260,43 @@ Partial Class MainForm
         '
         Me.MainPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(84, Byte), Integer))
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainPanel.Location = New System.Drawing.Point(200, 52)
+        Me.MainPanel.Location = New System.Drawing.Point(150, 42)
+        Me.MainPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(975, 638)
+        Me.MainPanel.Size = New System.Drawing.Size(731, 519)
         Me.MainPanel.TabIndex = 2
         '
-        'btDesembolsos
+        'btImportar
         '
-        Me.btDesembolsos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btDesembolsos.FlatAppearance.BorderSize = 0
-        Me.btDesembolsos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btDesembolsos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btDesembolsos.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btDesembolsos.ForeColor = System.Drawing.Color.LightGray
-        Me.btDesembolsos.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.btDesembolsos.IconColor = System.Drawing.Color.Black
-        Me.btDesembolsos.IconSize = 16
-        Me.btDesembolsos.Location = New System.Drawing.Point(0, 369)
-        Me.btDesembolsos.Name = "btDesembolsos"
-        Me.btDesembolsos.Rotation = 0R
-        Me.btDesembolsos.Size = New System.Drawing.Size(200, 60)
-        Me.btDesembolsos.TabIndex = 6
-        Me.btDesembolsos.Text = "Desembolsos"
-        Me.btDesembolsos.UseVisualStyleBackColor = True
+        Me.btImportar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btImportar.FlatAppearance.BorderSize = 0
+        Me.btImportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btImportar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btImportar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btImportar.ForeColor = System.Drawing.Color.LightGray
+        Me.btImportar.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.btImportar.IconColor = System.Drawing.Color.Black
+        Me.btImportar.IconSize = 16
+        Me.btImportar.Location = New System.Drawing.Point(0, 350)
+        Me.btImportar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btImportar.Name = "btImportar"
+        Me.btImportar.Rotation = 0R
+        Me.btImportar.Size = New System.Drawing.Size(150, 49)
+        Me.btImportar.TabIndex = 7
+        Me.btImportar.Text = "Importar"
+        Me.btImportar.UseVisualStyleBackColor = True
         '
         'MainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MidnightBlue
-        Me.ClientSize = New System.Drawing.Size(1175, 690)
+        Me.ClientSize = New System.Drawing.Size(881, 561)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.TopPanel)
         Me.Controls.Add(Me.LeftPanel)
         Me.DoubleBuffered = True
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MainForm"
         Me.Text = "Form1"
         Me.LeftPanel.ResumeLayout(False)
@@ -287,4 +320,5 @@ Partial Class MainForm
     Friend WithEvents btRecibir As FontAwesome.Sharp.IconButton
     Friend WithEvents lbTitulo As Label
     Friend WithEvents btDesembolsos As FontAwesome.Sharp.IconButton
+    Friend WithEvents btImportar As FontAwesome.Sharp.IconButton
 End Class
